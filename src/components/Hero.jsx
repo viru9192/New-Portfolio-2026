@@ -131,7 +131,7 @@ export default function Hero() {
             <motion.div className="relative" initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}>
               <div className="absolute -inset-3 rounded-3xl blur-3xl opacity-20 animate-glow-pulse" style={{ background: 'linear-gradient(135deg, #4f7fff, #a78bfa, #06b6d4)' }} />
               <div className="relative rounded-3xl overflow-hidden" style={{ width: '220px', height: '260px', border: '2px solid rgba(99,102,241,0.3)', boxShadow: '0 24px 60px rgba(0,0,0,0.18)' }}>
-                <img src="/Viranchi_photo.jpeg" alt="Viranchi More" className="w-full h-full object-cover object-top" />
+                <img src="/New-Portfolio-2026/Viranchi_photo.jpeg" alt="Viranchi More" className="w-full h-full object-cover object-top" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.25) 0%, transparent 50%)' }} />
               </div>
               <div className="absolute -bottom-3.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[10px] font-semibold whitespace-nowrap shadow-lg" style={{ background: 'var(--surface)', border: '1px solid rgba(52,211,153,0.35)', color: '#16a34a' }}>
