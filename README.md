@@ -1,4 +1,4 @@
-# Viranchi More — Portfolio
+# Viranchi More — Portfolio 
 
 Personal portfolio website built with React, Tailwind CSS, and Framer Motion.
 
