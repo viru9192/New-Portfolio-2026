@@ -6,7 +6,7 @@ export const personal = {
   github: 'https://github.com/viru9192',
   linkedin: 'https://www.linkedin.com/in/viranchimore/',
   location: 'Binghamton, NY',
-  resumeUrl: '/Viranchi_More_Resume_Analyst.pdf',
+  resumeUrl: `${import.meta.env.BASE_URL}Viranchi_More_Resume_Analyst.pdf`,
   roles: [
     'Data Scientist',
     'Data Analyst',
