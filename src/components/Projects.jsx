@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiGithub, FiArrowRight, FiChevronDown } from 'react-icons/fi'
+import { FiGithub, FiArrowRight, FiChevronDown, FiExternalLink, FiLock } from 'react-icons/fi'
 import { projects } from '../data/portfolioData'
 
 const FILTERS = ['All', 'ML', 'SQL', 'BI']
@@ -81,19 +81,45 @@ function ProjectRow({ project, index }) {
 
         {/* Actions — desktop */}
         <div className="hidden sm:flex flex-col items-end gap-3 flex-shrink-0">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            onClick={e => e.stopPropagation()}
-            className="flex items-center gap-1.5 text-xs font-medium transition-colors duration-150 cursor-pointer"
-            style={{ color: 'var(--text-3)' }}
-            onMouseEnter={e => e.currentTarget.style.color = 'var(--text-1)'}
-            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-3)'}
-          >
-            <FiGithub size={13} />
-            Code
-          </a>
+          {project.private ? (
+            <span
+              className="flex items-center gap-1.5 text-xs font-medium select-none"
+              style={{ color: 'var(--text-3)' }}
+              title="Source is a private repository"
+            >
+              <FiLock size={12} />
+              Private
+            </span>
+          ) : (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              onClick={e => e.stopPropagation()}
+              className="flex items-center gap-1.5 text-xs font-medium transition-colors duration-150 cursor-pointer"
+              style={{ color: 'var(--text-3)' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'var(--text-1)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'var(--text-3)'}
+            >
+              <FiGithub size={13} />
+              Code
+            </a>
+          )}
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+              onClick={e => e.stopPropagation()}
+              className="flex items-center gap-1.5 text-xs font-medium transition-colors duration-150 cursor-pointer"
+              style={{ color: 'var(--text-3)' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'var(--text-1)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'var(--text-3)'}
+            >
+              <FiExternalLink size={13} />
+              Live Demo
+            </a>
+          )}
           <motion.div
             animate={{ rotate: open ? 180 : 0 }}
             transition={{ duration: 0.2 }}

@@ -105,7 +105,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.div className="flex flex-wrap items-center gap-3 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}>
-              <motion.a href="/Viranchi_More_Resume.pdf" download className="btn-primary text-sm" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}>
+              <motion.a href="/Viranchi_More_Resume_Analyst.pdf" download className="btn-primary text-sm" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}>
                 Download Resume <FiArrowRight size={14} />
               </motion.a>
               <motion.a href={personal.github} target="_blank" rel="noreferrer" className="btn-ghost text-sm" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}>

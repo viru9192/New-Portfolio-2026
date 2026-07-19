@@ -129,7 +129,7 @@ export default function Navbar({ isDark, setIsDark }) {
               </button>
 
               <a
-                href="/Viranchi_More_Resume.pdf"
+                href="/Viranchi_More_Resume_Analyst.pdf"
                 download
                 className="hidden md:flex items-center gap-1.5 px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg transition-all cursor-pointer"
               >
@@ -184,7 +184,7 @@ export default function Navbar({ isDark, setIsDark }) {
                 ))}
                 <div className="mt-2 pt-2" style={{ borderTop: '1px solid var(--border)' }}>
                   <a
-                    href="/Viranchi_More_Resume.pdf"
+                    href="/Viranchi_More_Resume_Analyst.pdf"
                     download
                     className="flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 rounded-xl cursor-pointer"
                   >
